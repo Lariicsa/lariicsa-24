@@ -28,15 +28,15 @@
 	};
 </script>
 <template>
-	<div class="relative w-[72px] uppercase flex items-center justify-center">
+	<div class="relative w-[56px] uppercase flex items-center justify-center">
 		<label
 			for="langId"
 			class="flex items-center w-auto absolute top-0 left-auto h-auto active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
 			<font-awesome-icon
 				icon="fa-solid fa-globe"
-				class="text-[#e0e0e0] w-auto h-[29px] active:text-[#81B2F6] sm:hover:text-[#81B2F6]" />
+				class="text-[#e0e0e0] w-auto h-[20px] active:text-[#81B2F6] sm:hover:text-[#81B2F6]" />
 			<span
-				class="text-[#e0e0e0] my-auto ml-[8px] active:text-[#81B2F6] sm:hover:text-[#81B2F6]"
+				class="text-[#e0e0e0] my-auto ml-[4px] active:text-[#81B2F6] sm:hover:text-[#81B2F6]"
 				>{{ currentLanguage }}</span
 			>
 		</label>
@@ -58,7 +58,6 @@
 	.custom-select select {
 		appearance: none;
 		width: 100%;
-		font-size: 1.15rem;
 		padding: 0;
 		background-color: transparent;
 		border: none;
