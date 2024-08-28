@@ -36,6 +36,11 @@ const Trans = {
 		return nextTick();
 	},
 
+	getCurrentLocale() {
+		const lang =  Trans.currentLocale;
+		return lang
+	},
+
 	isLocaleSupported(locale) {
 		return Trans.supportedLocales.includes(locale);
 	},

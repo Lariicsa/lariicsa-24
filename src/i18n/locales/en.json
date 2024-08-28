@@ -4,11 +4,26 @@
     "es": "Spanish"
   },
   "nav": {
-    "home": "Home",
-    "about": "About",
-    "experience": "Experience",
-    "resume":"Resume"
+    "resume": "Resume",
+    "menu": [
+      {
+        "name": "Home",
+        "link": "/",
+        "slug": "home"
+      },
+      {
+        "name": "Experience",
+        "link": "/experience",
+        "slug": "experience"
+      },
+      {
+        "name": "About",
+        "link": "/about",
+        "slug": "about"
+      }
+    ]
   },
+
   "home": {
     "header": "Welcome to the Vue 3 I18n tutorial!",
     "created_by": "This tutorial was brought to you by {company}.",

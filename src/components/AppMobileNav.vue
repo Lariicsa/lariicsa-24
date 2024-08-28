@@ -1,6 +1,7 @@
 <!-- @format -->
 <script setup>
 	import AppButton from "@/components/AppButton.vue";
+	import AppLanguage from "./AppLanguage.vue";
 
 	const emit = defineEmits(["toggleButton"]);
 	const toggleButton = () => {
@@ -20,7 +21,6 @@
 </script>
 <template>
 	<div
-		@click="toggleButton"
 		class="mobileMenu w-full h-full fixed z-50 top-0 right-0 bg-[#000000]/70 transition duration-200 ease-in-out"
 		:class="isOpen ? 'translate-x-0' : 'translate-x-full'">
 		<div
@@ -28,6 +28,7 @@
 			<div
 				class="absolute w-[32px] h-[32px] right-[32px] top-[32px] active:text-[#81B2F6]">
 				<font-awesome-icon
+					@click.stop="toggleButton"
 					icon="fa-solid fa-circle-xmark"
 					class="w-full h-full text-white active:text-[#81B2F6]" />
 			</div>
@@ -36,7 +37,9 @@
 					<li
 						v-for="item in menuItems"
 						class="w-full text-[18px] py-0 text-[#f0f0f0] my-[24px] border border-x-0 border-t-0 border-b-[#51576E] border-dotted">
-						<a :href="item.link" class="block h-full w-full py-[16px]">{{ item.name }}</a>
+						<a :href="item.link" class="block h-full w-full py-[16px]">{{
+							item.name
+						}}</a>
 					</li>
 				</ul>
 				<AppButton
@@ -47,6 +50,10 @@
 					size="md"
 					>Resume</AppButton
 				>
+
+				<div class="flex justify-start items center mt-[24%]">
+					<AppLanguage />
+				</div>
 			</div>
 		</div>
 	</div>
