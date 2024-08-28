@@ -1,16 +1,23 @@
 <!-- @format -->
 <script setup>
-	import { ref } from "vue";
+	import { ref, computed } from "vue";
 	import { useI18n } from "vue-i18n";
+	import Tr from "@/i18n/translation";
 
 	import AppButton from "@/components/AppButton.vue";
 	import AppLanguage from "@/components/AppLanguage.vue";
 	import Applogo from "./icons/Applogo.vue";
 	import AppMobileNav from "./AppMobileNav.vue";
 
+	const { t, locale } = useI18n();
+	const supportedLocales = Tr.supportedLocales;
+
 	const emit = defineEmits(["toggleMenu"]);
 
 	const isOpen = ref(false);
+	const isEnglish = computed(() => {
+		return Tr.getCurrentLocale();
+	});
 
 	defineProps({
 		currenRoute: {
@@ -18,29 +25,30 @@
 		},
 	});
 
+	const iMenu = computed(() => {
+		const items = [
+			{
+				name: t("nav.menu.0.name"),
+				link: "/",
+				slug: "home",
+			},
+			{
+				name: t("nav.menu.1.name"),
+				link: "/experience",
+				slug: "experience",
+			},
+			{
+				name: t("nav.menu.2.name"),
+				link: "/about",
+				slug: "about",
+			},
+		];
+		return items;
+	});
+
 	const toggleMenu = () => {
 		isOpen.value = !isOpen.value;
 	};
-
-	const { t } = useI18n();
-
-	const itemsMenu = [
-		{
-			name: "Home",
-			link: "/",
-			slug: "home",
-		},
-		{
-			name: "Experience",
-			link: "/experience",
-			slug: "experience",
-		},
-		{
-			name: "About",
-			link: "/about",
-			slug: "about",
-		},
-	];
 </script>
 <template>
 	<nav
@@ -56,10 +64,10 @@
 		<div class="w-auto hidden sm:flex">
 			<ul
 				class="w-auto px-[24px] flex p-0 text-[16px] sm:text-[18px] font-medium">
-				<li v-for="item in itemsMenu" class="mr-[24px]">
+				<li v-for="item in iMenu" class="mr-[24px]">
 					<a
 						:href="item.link"
-						class="acive:text-[#81B2F6] sm:hovertext-[#81B2F6]"
+						class="active:text-[#81B2F6] sm:hover:text-[#81B2F6]"
 						:class="
 							item.slug === currenRoute ? 'text-[#81B2F6]' : 'text-[#e0e0e0]'
 						"
@@ -79,7 +87,7 @@
 			<AppLanguage />
 		</div>
 		<AppMobileNav
-			:menuItems="itemsMenu"
+			:menuItems="iMenu"
 			:isOpen="isOpen"
 			@toggleButton="toggleMenu" />
 	</nav>

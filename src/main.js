@@ -17,6 +17,7 @@ import {
 	faBars as fasBars,
 	faCircleXmark as fasCircleXmark,
 	faLanguage as fasLanguage,
+	faGlobe as fasGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* @fortawesome Brands */
@@ -29,6 +30,7 @@ library.add(
 	fasEnvelope,
 	fasCircleXmark,
 	fasLanguage,
+	fasGlobe
 );
 
 const app = createApp(App);
