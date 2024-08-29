@@ -84,7 +84,7 @@
 				>{{ $t("nav.resume") }}</AppButton
 			>
 			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[24px]"></span>
-			<AppLanguage />
+			<AppLanguage id="topLang" />
 		</div>
 		<AppMobileNav
 			:menuItems="iMenu"
