@@ -146,5 +146,16 @@
         ]
       }
     ]
+  },
+  "about": {
+    "title": "¿Quién soy?",
+    "fullName": "Larissa Avila",
+    "abstract": [
+      "Hace mucho tiempo atrás solía ser Diseñadora UX/UI y maquetar en HTML/CSS, pero desde que descubrí la magia de la programación para interfaces ... Me enamoré !",
+      "Creo que unos de los skills que marca la diferencia en mi perfil, en conjunto con mi amplio conocimiento en CSS, es saber lo necesario de las interfaces de usuario, diseño de patrones y el desarrollo de interacción con las mismas."
+    ]
+  },
+  "footer": {
+    "lastUpdate": "Agosto 2024"
   }
 }
