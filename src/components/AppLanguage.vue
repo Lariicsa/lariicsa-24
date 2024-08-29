@@ -6,6 +6,12 @@
 	import { useRouter } from "vue-router";
 	import Tr from "@/i18n/translation";
 
+	defineProps({
+		id: {
+			type: String,
+		},
+	});
+
 	const { t, locale } = useI18n();
 	const supportedLocales = Tr.supportedLocales;
 	const router = useRouter();
@@ -16,7 +22,6 @@
 
 	const changeLanguage = async (event) => {
 		const newLocale = event.target.value;
-
 		await Tr.changeLanguage(newLocale);
 
 		try {
@@ -30,7 +35,8 @@
 <template>
 	<div class="relative w-[56px] uppercase flex items-center justify-center">
 		<label
-			for="langId"
+			:for="id"
+			:name="id"
 			class="flex items-center w-auto absolute top-0 left-auto h-auto active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
 			<font-awesome-icon
 				icon="fa-solid fa-globe"
@@ -42,7 +48,7 @@
 		</label>
 		<div
 			class="custom-select relative w-auto h-auto flex justify-center items-center active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
-			<select id="langId" @change.stop="changeLanguage" class="">
+			<select @change.stop="changeLanguage" :id="id" class="">
 				<option
 					v-for="sLocale in supportedLocales"
 					:key="`locale-${sLocale}`"
@@ -54,8 +60,8 @@
 		</div>
 	</div>
 </template>
-<style>
-	.custom-select select {
+<style scoped>
+	select {
 		appearance: none;
 		width: 100%;
 		padding: 0;

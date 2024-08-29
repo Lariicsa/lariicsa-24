@@ -52,7 +52,7 @@
 				>
 
 				<div class="flex justify-start items center mt-[24%]">
-					<AppLanguage />
+					<AppLanguage id="mobileLang" />
 				</div>
 			</div>
 		</div>
