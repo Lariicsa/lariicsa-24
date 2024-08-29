@@ -24,9 +24,13 @@
     ]
   },
   "home": {
-    "header": "Welcome to the Vue 3 I18n tutorial!",
-    "created_by": "This tutorial was brought to you by {company}.",
-    "num_visits": "This page hasn't been visited :( | This page has been visited {n} time | This page has been visited {n} times"
+    "hi": "Hola",
+    "im": "Soy",
+    "developer": "Desarrolladora Frontend / UI",
+    "ninja": "y Ninja HTML/CSS",
+    "abstract": "Experiencia en Frontend por más de 6 años (también en diseñoi ux/ui).Busco nuevos retos donde pueda aplicar y mejorar mis habilidades con cada proyecto.",
+    "btnExperience": "Experiencia",
+    "btnAbout": "Quién soy?"
   },
   "about": {
     "header": "About us",

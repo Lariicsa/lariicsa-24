@@ -21,6 +21,7 @@
 </script>
 <template>
 	<div
+
 		class="mobileMenu w-full h-full fixed z-50 top-0 right-0 bg-[#000000]/70 transition duration-200 ease-in-out"
 		:class="isOpen ? 'translate-x-0' : 'translate-x-full'">
 		<div
