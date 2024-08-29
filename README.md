@@ -1,29 +1,14 @@
-# lariicsa24
+# Personal web page Larissa Avila Ramírez
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+### Check it out
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[Lariicsa.com](http://lariicsa.com) 
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
+### Check it out
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Made with: Vue + Tailwind + Netlify + Fontawesome
