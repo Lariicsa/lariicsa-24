@@ -15,9 +15,6 @@
 	const emit = defineEmits(["toggleMenu"]);
 
 	const isOpen = ref(false);
-	const isEnglish = computed(() => {
-		return Tr.getCurrentLocale();
-	});
 
 	defineProps({
 		currenRoute: {

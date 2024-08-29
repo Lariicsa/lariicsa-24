@@ -9,10 +9,8 @@ import AppContact from "@/components/AppContact.vue";
 import AppToaster from "@/components/AppToaster.vue";
 import CircleImage from "@/components/CircleImage.vue";
 
-
 const { t, locale } = useI18n();
 const supportedLocales = Tr.supportedLocales;
-
 const router = useRouter();
 
 const showMessage = ref(false);

@@ -32,8 +32,119 @@
     "btnExperience": "Experiencia",
     "btnAbout": "Quién soy?"
   },
-  "about": {
-    "header": "About us",
-    "donations": "Donations raised: {donations}"
+  "experience": {
+    "title": "Experiencia",
+    "cards": [
+      {
+        "title": "Sr. Frontend Developer",
+        "subtitle": "Latouraine Inc.",
+        "date": "current",
+        "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
+        "skills": [
+          "Vue",
+          "Pinia",
+          "Tailwind",
+          "Vanilla Js",
+          "SCSS",
+          "jQuery",
+          "PHP",
+          "Laravel",
+          "Inertia",
+          "Vagrant",
+          "Gitflow",
+          "Scrum",
+          "Envoyer",
+          "Figma"
+        ]
+      },
+      {
+        "title": "Lead Frontend Developer",
+        "subtitle": "Latouraine Inc.",
+        "date": "current",
+        "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
+        "skills": [
+          "Vue",
+          "Pinia",
+          "Tailwind",
+          "Vanilla Js",
+          "SCSS",
+          "jQuery",
+          "PHP",
+          "Laravel",
+          "Inertia",
+          "Vagrant",
+          "Gitflow",
+          "Scrum",
+          "Envoyer",
+          "Figma"
+        ]
+      },
+      {
+        "title": "Product Designer",
+        "subtitle": "Latouraine Inc.",
+        "date": "current",
+        "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
+        "skills": [
+          "Vue",
+          "Pinia",
+          "Tailwind",
+          "Vanilla Js",
+          "SCSS",
+          "jQuery",
+          "PHP",
+          "Laravel",
+          "Inertia",
+          "Vagrant",
+          "Gitflow",
+          "Scrum",
+          "Envoyer",
+          "Figma"
+        ]
+      },
+      {
+        "title": "Jr.. Frontend Developer",
+        "subtitle": "Latouraine Inc.",
+        "date": "current",
+        "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
+        "skills": [
+          "Vue",
+          "Pinia",
+          "Tailwind",
+          "Vanilla Js",
+          "SCSS",
+          "jQuery",
+          "PHP",
+          "Laravel",
+          "Inertia",
+          "Vagrant",
+          "Gitflow",
+          "Scrum",
+          "Envoyer",
+          "Figma"
+        ]
+      },
+      {
+        "title": "Lead Web Designer",
+        "subtitle": "Latouraine Inc.",
+        "date": "current",
+        "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
+        "skills": [
+          "Vue",
+          "Pinia",
+          "Tailwind",
+          "Vanilla Js",
+          "SCSS",
+          "jQuery",
+          "PHP",
+          "Laravel",
+          "Inertia",
+          "Vagrant",
+          "Gitflow",
+          "Scrum",
+          "Envoyer",
+          "Figma"
+        ]
+      }
+    ]
   }
 }
