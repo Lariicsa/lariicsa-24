@@ -1,5 +1,7 @@
 # Personal web page Larissa Avila Ramírez
 
+![Lariicsa.com](https://github.com/Lariicsa/lariicsa-24/blob/main/public/preview.png "Larissa Avila")
+
 
 ### Check it out
 
@@ -9,6 +11,6 @@
 
 
 
-### Check it out
+### Made with
 
-Made with: Vue + Tailwind + Netlify + Fontawesome
+ **Vue + Tailwind + Netlify + Fontawesome**
