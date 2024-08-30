@@ -60,8 +60,20 @@ const toggleMenu = () => {
 
 		<div class="w-auto hidden sm:flex">
 			<ul class="w-auto px-[24px] flex p-0 text-[16px] sm:text-[18px] font-medium">
-				<li  class="mr-[24px]">
-					<RouterLink :to="Tr.i18nRoute({ name: 'about' })">{{ $t("nav.menu.1.name") }}</RouterLink>
+				<li class="mr-[24px]">
+					<RouterLink :to="Tr.i18nRoute({ name: 'home' })" class="active:text-[#81B2F6] sm:hover:text-[#81B2F6]"
+						:class="'home' === currenRoute ? 'text-[#81B2F6]' : 'text-[#e0e0e0]'"> {{ $t("nav.menu.0.name")
+						}}</RouterLink>
+				</li>
+				<li class="mr-[24px]">
+					<RouterLink :to="Tr.i18nRoute({ name: 'experience' })" class="active:text-[#81B2F6] sm:hover:text-[#81B2F6]"
+						:class="'experience' === currenRoute ? 'text-[#81B2F6]' : 'text-[#e0e0e0]'"> {{ $t("nav.menu.1.name")
+						}}</RouterLink>
+				</li>
+				<li class="mr-[24px]">
+					<RouterLink :to="Tr.i18nRoute({ name: 'about' })" class="active:text-[#81B2F6] sm:hover:text-[#81B2F6]"
+						:class="'about' === currenRoute ? 'text-[#81B2F6]' : 'text-[#e0e0e0]'"> {{ $t("nav.menu.2.name")
+						}}</RouterLink>
 				</li>
 			</ul>
 			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[24px]"></span>
