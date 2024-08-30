@@ -22,15 +22,7 @@ const copyEmailToClipboard = () => {
 	}, 3000);
 };
 
-const homeTranslation = computed(() => {
-	return t("nav.menu.0.name")
-});
 
-
-
-const goTo = (path) => {
-	router.push({ path: `/${path}` });
-};
 </script>
 
 <template>
@@ -53,10 +45,15 @@ const goTo = (path) => {
 				</p>
 
 				<div class="flex w-full justify-center sm:justify-start my-[36px] sm:my-[64px]">
-					<AppButton @click="goTo('experience')" color="peach" size="lg" class="mr-[24px] sm:mr-[48px]">{{
-						$t("home.btnExperience") }}
+					<AppButton :isRoute="true" :to="Tr.i18nRoute({ name: 'experience' })" color="peach" size="lg"
+						class="mr-[24px] sm:mr-[48px]">{{
+							$t("home.btnExperience") }}
 					</AppButton>
-					<AppButton @click="goTo('about')" color="pink" size="lg">{{ $t("home.btnAbout") }}</AppButton>
+
+					<AppButton :isRoute="true" :to="Tr.i18nRoute({ name: 'about' })" color="pink" size="lg"
+						class="mr-[24px] sm:mr-[48px]">{{
+							$t("home.btnAbout") }}
+					</AppButton>
 				</div>
 
 				<AppContact @clickOnEnvelope="copyEmailToClipboard" />
