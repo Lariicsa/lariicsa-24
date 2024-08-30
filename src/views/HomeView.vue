@@ -53,9 +53,10 @@ const goTo = (path) => {
 				</p>
 
 				<div class="flex w-full justify-center sm:justify-start my-[36px] sm:my-[64px]">
-					<AppButton @click="goTo('experience')" color="peach" size="lg" class="mr-[24px] sm:mr-[48px]">{{ $t("home.btnExperience") }}
+					<AppButton @click="goTo('experience')" color="peach" size="lg" class="mr-[24px] sm:mr-[48px]">{{
+						$t("home.btnExperience") }}
 					</AppButton>
-					<AppButton @click="goTo('about')" color="pink" size="lg">{{  $t("home.btnAbout")  }}</AppButton>
+					<AppButton @click="goTo('about')" color="pink" size="lg">{{ $t("home.btnAbout") }}</AppButton>
 				</div>
 
 				<AppContact @clickOnEnvelope="copyEmailToClipboard" />
