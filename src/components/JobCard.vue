@@ -1,18 +1,23 @@
 <!-- @format -->
 <script setup>
-	import AppTag from "./AppTag.vue";
+import { computed, ref, toRaw, onMounted } from "vue";
+import AppTag from "./AppTag.vue";
 
-	defineProps({
-		items: {
-			type: Object,
-			default: () => {},
-		},
-	});
+
+defineProps({
+	items: {
+		type: Object,
+		default: () => { },
+	},
+});
+
+
+
+
 </script>
 <template>
-	<div
-		v-for="item in items"
-		class="flex shadow-md flex-col items-center bg-[#ffffff] w-full sm:w-[672px] h-auto sm:h-[344px] rounded-lg border border-[#CED7E5] px-[24px] sm:px-[48px] py-[24px] mb-[104px] last:mb-0 relative">
+	<div v-for="(item, i) in items" :id="`lacard${i}`"
+		class="lacard flex shadow-md flex-col items-center bg-[#ffffff] w-full sm:w-[672px] h-auto sm:h-[344px] rounded-lg border border-[#CED7E5] px-[24px] sm:px-[48px] py-[24px] mb-[104px] last:mb-0 relative">
 		<div
 			class="ball flex w-[20px] h-[20px] rounded-full bg-[#F0BAEE] absolute left-auto sm:left-[-172px] top-[-64px] sm:top-[-1px] z-[2]">
 			<span
@@ -31,12 +36,10 @@
 		<h3 class="text-[#373737] font-bold text-[22px] sm:text-[30px] my-0">
 			{{ item.title }}
 		</h3>
-		<h4
-			class="text-[#5252E1] text-[20px] sm:text-[26px] font-semibold text-center my-[4px] sm:my-[8px]">
+		<h4 class="text-[#5252E1] text-[20px] sm:text-[26px] font-semibold text-center my-[4px] sm:my-[8px]">
 			{{ item.subtitle }}
 		</h4>
-		<p
-			class="text-[14px] sm:text-[16px] text-[#51576E] text-center w-auto my-[8px] sm:my-[12px]">
+		<p class="text-[14px] sm:text-[16px] text-[#51576E] text-center w-auto my-[8px] sm:my-[12px]">
 			{{ item.abstract }}
 		</p>
 		<hr class="border-0 h-[1px] bg-[#EAEAEA] w-full my-[8px]" />
