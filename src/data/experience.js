@@ -4,6 +4,7 @@ const jobs = [
 	{
 		title: "Sr. Frontend Developer",
 		subtitle: "Latouraine Inc.",
+		joblink: "https://www.latouraineinc.com",
 		date: "current",
 		abstract: `
     Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content.
@@ -29,6 +30,7 @@ const jobs = [
 	{
 		title: "Lead Frontend Developer",
 		subtitle: "Montebit",
+		joblink: "https://montebit.com",
 		date: "2019 - 2022",
 		abstract: `
     Developed web apps, and landing pages and components UI library and making from scratch,
@@ -52,6 +54,7 @@ const jobs = [
 	{
 		title: "Product Designer",
 		subtitle: "ASC Education",
+		joblink: "https://asc.education",
 		date: "2017 - 2019",
 		abstract: `Conceptualize, design, and prototype new features in dashboards and systems interfaces. Create components in Vue.`,
 		skills: [
@@ -69,6 +72,7 @@ const jobs = [
 	{
 		title: "Jr. Frontend Developer",
 		subtitle: "Segundamano.mx",
+		joblink: "https://www.segundamano.mx",
 		date: "2015 - 2017",
 		abstract: `
 		Create and develop rules and muckup structure for CSS stack in whole site.
@@ -90,6 +94,7 @@ const jobs = [
 	{
 		title: "Lead Web Designer",
 		subtitle: "Holding Leos",
+		joblink: "http://holdingleos.com",
 		date: "2013 - 2015",
 		abstract: `
 		Lead Web design team. Conceptualize, design, and prototype new features on dashboard and systems interfaces for wap, web and mobile.
