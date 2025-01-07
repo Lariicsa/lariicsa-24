@@ -25,13 +25,14 @@
 
 <template>
 	<div
-		class="appMain flex relative flex-col mx-auto w-full h-full min-h-[100vh] bg-gradient-to-b from-[#374049] to-[#282634] pb-0 px-[16px]">
+		class="appMain flex relative flex-col mx-auto w-full  bg-gradient-to-b from-[#374049] to-[#282634] pb-0 px-[16px] min-h-full-std">
 		<NavMenu :currenRoute="currenRoute" />
 
 		<RouterView />
 
 		<AppToaster :show="showMessage" />
 
-		<AppFooter @clickOnEnvelope="copyEmailToClipboard" />
+		
 	</div>
+	<AppFooter @clickOnEnvelope="copyEmailToClipboard" />
 </template>

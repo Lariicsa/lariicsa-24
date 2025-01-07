@@ -1,4 +1,3 @@
-<!-- @format -->
 <script setup>
 import { useI18n } from "vue-i18n";
 import Tr from "@/i18n/translation";
@@ -7,7 +6,7 @@ const { t, locale } = useI18n();
 const supportedLocales = Tr.supportedLocales;
 </script>
 <template>
-	<div class="flex flex-col items-center w-full mb-[120px] md:mb-0">
+	<div class="flex flex-col items-center w-full mb-[120px] md:mb-0 h-full min-h-[calc(100vh-116px)]">
 		<h1 class="mt-[56px] text-[44px] text-[#E5E5E5] text-center font-semibold">
 			{{ $t("about.title") }}
 		</h1>
@@ -27,7 +26,7 @@ const supportedLocales = Tr.supportedLocales;
 			</div>
 
 			<div
-				class="flex flex-col w-xl sm:w-2/3 bg-transparent md:bg-[#FFE194] text-[#373737] rounded-tl-[80px] md:rounded-tr-[122px] px-[24px] md:px-[48px] py-[48px] relative z-[2]">
+				class="flex flex-col  w-xl sm:w-2/3 bg-transparent md:bg-[#FFE194] text-[#373737] rounded-tl-[80px] md:rounded-tr-[122px] px-[24px] md:px-[48px] py-[48px] relative z-[2]">
 				<h2 class="text-center md:text-left font-semibold md:text-[32px] text-[24px]">
 					{{ $t("about.fullName") }}
 				</h2>

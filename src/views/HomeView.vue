@@ -26,7 +26,7 @@ const copyEmailToClipboard = () => {
 </script>
 
 <template>
-	<div class="w-full flex-col max-w-[1300px] flex justify-center mx-auto">
+	<div class="w-full flex-col max-w-[1300px] flex  mx-auto h-full min-h-full-std">
 		<main class="flex w-full flex-col md:flex-row items-center justify-between">
 			<div class="flex flex-col w-full md:w-4/6 mt-[32px] sm:mt-[64px] mx-auto items-center sm:items-start">
 				<div class="text-[40px] sm:text-[64px] text-center sm:text-left font-extrabold text-[#e0e0e0]">
