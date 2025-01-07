@@ -1,5 +1,3 @@
-<!-- @format -->
-
 <script setup>
 import { computed, ref, toRaw } from "vue";
 import AppTimeline from "@/components/AppTimeline.vue";

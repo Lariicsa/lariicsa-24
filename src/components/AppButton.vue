@@ -1,8 +1,6 @@
-<!-- @format -->
-
 <script setup>
 import { computed } from "vue";
-import { useRouter, RouterLink } from "vue-router";
+import { RouterLink } from "vue-router";
 const color = computed(() => {
 	return {
 		peach: "bg-gradient-to-r from-[#F89E7B] to-[#F58C64] text-[#373737]",
