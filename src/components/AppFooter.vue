@@ -1,4 +1,3 @@
-<!-- @format -->
 <script setup>
 import { defineEmits } from "vue";
 import { useI18n } from "vue-i18n";
@@ -8,8 +7,6 @@ const emit = defineEmits(["clickOnEnvelope"]);
 const clickOnEnvelope = () => {
 	emit("clickOnEnvelope");
 };
-
-const { t, locale } = useI18n();
 
 const contact = [
 	{
@@ -24,9 +21,9 @@ const contact = [
 </script>
 <template>
 	<footer
-		class="flex w-full h-[56px] bg-gradient-to-r from-[#9494D2] to-[#ABB4FF] text-[#5252E1] fixed bottom-0 left-0 px-[16px] z-[4]">
+		class="flex w-full h-[56px] bg-gradient-to-r from-[#9494D2] to-[#ABB4FF] text-[#5252E1] relative bottom-0 left-0 px-[16px] z-[4]">
 		<div class="w-full max-w-[1280px] flex justify-between items-center mx-auto">
-			<span class="text-[12px] sm:text-[16px]">	{{ $t("footer.lastUpdate") }}</span>
+			<span class="text-[12px] sm:text-[16px]"> {{ $t("footer.lastUpdate") }}</span>
 			<div class="w-[124px] sm:w-[116px] flex justify-between items-center">
 				<a v-for="item in contact" :href="item.link"
 					class="border border-[#6C6CDC] rounded-full flex justify-center items-center w-[28px] h-[28px] active:saturate-200 sm:hover:saturate-200">
