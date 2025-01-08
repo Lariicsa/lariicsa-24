@@ -3,7 +3,7 @@
 const jobs = [
 	{
 		title: "Sr. Frontend Developer",
-		subtitle: "Latouraine Inc.",
+		subtitle: "Baja Technologies",
 		joblink: "https://www.latouraineinc.com",
 		date: "current",
 		abstract: `
