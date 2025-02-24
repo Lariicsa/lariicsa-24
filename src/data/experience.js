@@ -1,5 +1,3 @@
-/** @format */
-
 const jobs = [
 	{
 		title: "Sr. Frontend Developer",
