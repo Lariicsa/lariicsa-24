@@ -27,16 +27,16 @@
     "hi": "Hola",
     "im": "Soy",
     "developer": "Desarrolladora Frontend / UI",
-    "ninja": "y Ninja HTML/CSS",
-    "abstract": "Experiencia en Frontend por más de 5 años (también en diseñoi ux/ui). Busco nuevos retos donde pueda aplicar y mejorar mis habilidades con cada proyecto.",
+    "ninja": "e Ingeniera de Software",
+    "abstract": "Experiencia en Frontend por más de 5 años (también en diseño ux/ui). Me especializo en crear interfaces que reduzcan errores y en mejorar el performance.",
     "btnExperience": "Experiencia",
-    "btnAbout": "Quién soy?"
+    "btnAbout": "¿Quién soy?"
   },
   "experience": {
     "title": "Experiencia",
     "cards": [
       {
-        "title": "Sr. Frontend Developer",
+        "title": "Frontend Developer",
         "subtitle": "Baja Technologies",
         "date": "current",
         "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
@@ -156,6 +156,6 @@
     ]
   },
   "footer": {
-    "lastUpdate": "December 2024"
+    "lastUpdate": "January 2025"
   }
 }

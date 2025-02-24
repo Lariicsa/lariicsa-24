@@ -27,8 +27,8 @@
     "hi": "Hi",
     "im": "I'm",
     "developer": "Frontend / UI Developer",
-    "ninja": "and HTML/CSS ninja",
-    "abstract": "Frontend experience for over 5 years (included ux/ui design).\n I'm Looking for new challenges where I can apply and improve my skills in every different project.",
+    "ninja": "and Sofware Engineer",
+    "abstract": "Frontend experience With over 5 years of experience, I specialize in creating User Interfaces that reduce errors and enhance performance.",
     "btnExperience": "Experience",
     "btnAbout": "About me"
   },
@@ -36,7 +36,7 @@
     "title": "Experience",
     "cards": [
       {
-        "title": "Sr. Frontend Developer",
+        "title": "Frontend Developer",
         "subtitle": "Baja Technologies",
         "date": "current",
         "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
@@ -156,6 +156,6 @@
     ]
   },
   "footer":{
-    "lastUpdate":"December 2024"
+    "lastUpdate":"Enero 2025"
   }
 }
