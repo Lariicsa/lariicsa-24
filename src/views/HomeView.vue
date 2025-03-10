@@ -36,7 +36,7 @@ const copyEmailToClipboard = () => {
 				</div>
 				<p
 					class="flex items-center text-center sm:text-left sm:items-start w-auto text-[#e0e0e0] font-semibold text-[28px] sm:text-[44px]">
-					{{ $t("home.developer") }} {{ $t("home.ninja") }}.
+					{{ $t("home.developer") }}.
 				</p>
 
 				<p class="w-full text-[#9FA1A4] mt-[24px] text-[17px] sm:text-[20px] font-light text-center sm:text-left">
