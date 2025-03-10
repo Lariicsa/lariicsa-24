@@ -39,7 +39,7 @@
         "title": "Frontend Developer",
         "subtitle": "Baja Technologies",
         "date": "current",
-        "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
+        "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for entertainment web content. Fix UI and implement new FE technology.",
         "skills": [
           "Vue",
           "Pinia",
@@ -59,7 +59,7 @@
       },
       {
         "title": "Lead Frontend Developer",
-        "subtitle": "Latouraine Inc.",
+        "subtitle": "Montebiot",
         "date": "current",
         "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
         "skills": [
