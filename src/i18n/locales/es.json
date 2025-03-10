@@ -26,9 +26,9 @@
   "home": {
     "hi": "Hola",
     "im": "Soy",
-    "developer": "Desarrolladora Frontend / UI",
+    "developer": "Desarrolladora Frontend & Documentadora Técnica",
     "ninja": "e Ingeniera de Software",
-    "abstract": "Experiencia en Frontend por más de 5 años (también en diseño ux/ui). Me especializo en crear interfaces que reduzcan errores y en mejorar el performance.",
+    "abstract": "Con más de 5 años de experiencia como Frontend, Diseñadora UI/UX y Documentando, cuento con la experiencia necesaria para interactuar con el usuario por medio de las interfaces gráficas.",
     "btnExperience": "Experiencia",
     "btnAbout": "¿Quién soy?"
   },
@@ -39,7 +39,7 @@
         "title": "Frontend Developer",
         "subtitle": "Baja Technologies",
         "date": "current",
-        "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
+        "abstract": "Desarrollo de Web Apps (CMS, Portales, Social) y Landing pages para contendido de entretenimiento. Ajustes en interfaz de usuario y desarrollo e implementación de nuevas tecnologías de FE.",
         "skills": [
           "Vue",
           "Pinia",
@@ -59,7 +59,7 @@
       },
       {
         "title": "Lead Frontend Developer",
-        "subtitle": "Latouraine Inc.",
+        "subtitle": "Montebit",
         "date": "current",
         "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
         "skills": [
@@ -102,7 +102,7 @@
         ]
       },
       {
-        "title": "Jr.. Frontend Developer",
+        "title": "Jr. Frontend Developer",
         "subtitle": "Latouraine Inc.",
         "date": "current",
         "abstract": "Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content. Fix UI and implement new FE technology.",
