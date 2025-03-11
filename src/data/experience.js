@@ -1,27 +1,27 @@
 const jobs = [
 	{
-		title: "Sr. Frontend Developer",
+		title: "Frontend Developer",
 		subtitle: "Baja Technologies",
 		joblink: "https://www.latouraineinc.com",
 		date: "current",
 		abstract: `
-    Develop Web Apps (CMS, Portal, Social) and Landing pages for Adult web content.
-    Fix UI and implement new FE technology.`,
+    Develop Web Apps (CMS, Portal, Social) and Landing pages for Entertainement web content to improve interface and performance.`,
 		skills: [
 			"Vue",
 			"Pinia",
 			"Tailwind",
-			"Vanilla Js",
+			"Vanilla JS",
 			"SCSS",
 			"jQuery",
-			"PHP",
-			"Laravel",
 			"Inertia",
 			"Vagrant",
 			"Gitflow",
 			"Scrum",
 			"Envoyer",
 			"Figma",
+			"Documenting",
+			"Envoyer",
+			"SSR/SPA",
 		],
 	},
 
@@ -31,13 +31,13 @@ const jobs = [
 		joblink: "https://montebit.com",
 		date: "2019 - 2022",
 		abstract: `
-    Developed web apps, and landing pages and components UI library and making from scratch,
-    Developed CMS for Crypto management.
+    Led web apps development, landing pages and components UI library.
+    Developed CMS for Crypto management. Mentored Testers and new devs in team. Created and maintained user manuals and team style guides.
     `,
 		skills: [
 			"Vue",
 			"Vuex",
-			"Vanilla Js",
+			"Vanilla JS",
 			"SCSS",
 			"jQuery",
 			"Node.Js",
@@ -46,6 +46,8 @@ const jobs = [
 			"Scrum",
 			"AdobeXD",
 			"Sketch",
+			"Postgresql",
+			"Documenting",
 		],
 	},
 
@@ -54,7 +56,7 @@ const jobs = [
 		subtitle: "ASC Education",
 		joblink: "https://asc.education",
 		date: "2017 - 2019",
-		abstract: `Conceptualize, design, and prototype new features in dashboards and systems interfaces. Create components in Vue.`,
+		abstract: `Led UX/UI design, conceptualized, designed, and prototyped new features in dashboards and systems interfaces. Created components in Vue. Created and maintained user manuals.`,
 		skills: [
 			"UX / UI",
 			"Wireframing",
@@ -63,7 +65,9 @@ const jobs = [
 			"Vanilla Js",
 			"SCSS",
 			"Bootstrap",
+			"Documenting",
 			"Jekyll.rb",
+			"Git",
 		],
 	},
 
@@ -73,8 +77,8 @@ const jobs = [
 		joblink: "https://www.segundamano.mx",
 		date: "2015 - 2017",
 		abstract: `
-		Create and develop rules and muckup structure for CSS stack in whole site.
-		Implement Front-End. Develop components for self product.
+		I Created and developed rules for CSS stack in whole site and created HTML layout for whole wep app.
+		Implemented Front-End.
 		`,
 		skills: [
 			"UX / UI",
@@ -86,6 +90,7 @@ const jobs = [
 			"Docker",
 			"Scrum",
 			"TDD",
+			"Documenting",
 		],
 	},
 
@@ -95,8 +100,8 @@ const jobs = [
 		joblink: "http://holdingleos.com",
 		date: "2013 - 2015",
 		abstract: `
-		Lead Web design team. Conceptualize, design, and prototype new features on dashboard and systems interfaces for wap, web and mobile.
-		Implement Front-End. Create landing pages, marketing and e-commerce sites.
+		Led Web design team. Conceptualized, designed, and prototyped new features for dashboard and systems interfaces for wap, web and mobile.
+		Implemented Front-End. Created landing pages, marketing and e-commerce sites. Created documentation for Sales and Operations areas.
 		`,
 		skills: [
 			"UX / UI",
@@ -107,6 +112,7 @@ const jobs = [
 			"Fireworks",
 			"Photoshop",
 			"e-Mailing",
+			"Documenting",
 		],
 	},
 ];
