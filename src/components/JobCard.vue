@@ -34,7 +34,7 @@ defineProps({
 			class="text-[#5252E1] text-[20px] sm:text-[26px] font-semibold text-center my-[4px] sm:my-[8px] sm:hover:text-magenta/90">
 			{{ item.subtitle }}
 		</a>
-		<p class="text-[14px] sm:text-[16px] text-[#51576E] text-center w-auto my-[8px] sm:my-[12px]">
+		<p class="text-[14px] sm:text-[16px] text-[#51576E] text-center w-auto my-[8px] sm:my-[8px]">
 			{{ item.abstract }}
 		</p>
 		<hr class="border-0 h-[1px] bg-[#EAEAEA] w-full my-[8px]" />
