@@ -157,5 +157,8 @@
   },
   "footer": {
     "lastUpdate": "Enero 2025"
+  },
+  "shared":{
+    "copyEmail":"e-Mail copiado"
   }
 }
