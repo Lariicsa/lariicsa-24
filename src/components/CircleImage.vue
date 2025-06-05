@@ -2,17 +2,15 @@
 import {RouterLink} from "vue-router"
 import { useI18n } from "vue-i18n";
 import Tr from "@/i18n/translation";
-const { t, locale } = useI18n();
-const supportedLocales = Tr.supportedLocales;
 </script>
 <template>
 	<RouterLink :to="Tr.i18nRoute({ name: 'experience' })"
-		class="relative flex justify-center items-center w-[160px] h-[160px] md:w-[280px] md:h-[280px] mx-auto active:sepia sm:hover:sepia">
+		class="relative flex justify-center items-center w-[160px] h-[160px] lg:w-[280px] lg:h-[280px] mx-auto active:sepia sm:hover:sepia">
 		<div
-			class="rounded-full flex justify-center items-center bg-gradient-to-r from-[#F89E7B] to-[#C5A9F3] w-[160px] h-[160px] md:w-[200px] md:h-[200px] mx-auto absolute left-auto top-auto z-[2]">
-			<div class="rounded-full w-[94%] h-[94%] bg-cover" style="background-image: url(home_me.jpg)"></div>
+			class="rounded-full flex justify-center items-center bg-gradient-to-r from-[#F89E7B] to-[#C5A9F3] w-[160px] h-[160px] lg:w-[200px] lg:h-[200px] mx-auto absolute left-auto top-auto z-[2]">
+			<div class="rounded-full w-[94%] h-[94%] bg-cover" style="background-image: url(home_me.jpg)" alt="Larissa picture"></div>
 		</div>
-		<div class="w-[220px] h-[220px] md:w-[280px] md:h-[280px] rotate absolute left-auto top-auto z-0">
+		<div class="w-[220px] h-[220px] lg:w-[280px] lg:h-[280px] rotate absolute left-auto top-auto z-0">
 			<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 				<path id="circlePath" d="M 10, 50 a 40,40 0 1,1 80,0 40,40 0 1,1 -80,0" />
 				<text>

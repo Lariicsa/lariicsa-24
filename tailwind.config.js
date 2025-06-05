@@ -1,8 +1,9 @@
 import defaultTheme from "tailwindcss/defaultTheme";
+const colors = require('tailwindcss/colors')
 
 export default {
+	darkMode: 'class',
 	content: [
-		// Example content paths...
 		"./public/**/*.html",
 		"./src/**/*.{js,jsx,ts,tsx,vue}",
 	],
