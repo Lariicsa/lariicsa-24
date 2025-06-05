@@ -1,5 +1,5 @@
 <script setup>
-import {RouterLink} from "vue-router"
+import { RouterLink } from "vue-router"
 import { useI18n } from "vue-i18n";
 import Tr from "@/i18n/translation";
 </script>
@@ -7,10 +7,11 @@ import Tr from "@/i18n/translation";
 	<RouterLink :to="Tr.i18nRoute({ name: 'experience' })"
 		class="relative flex justify-center items-center w-[160px] h-[160px] lg:w-[280px] lg:h-[280px] mx-auto active:sepia sm:hover:sepia">
 		<div
-			class="rounded-full flex justify-center items-center bg-gradient-to-r from-[#F89E7B] to-[#C5A9F3] w-[160px] h-[160px] lg:w-[180px] lg:h-[180px] mx-auto absolute left-auto top-auto z-[2]">
-			<div class="rounded-full w-[94%] h-[94%] bg-cover" style="background-image: url(home_me.jpg)" alt="Larissa picture"></div>
+			class="rounded-full flex justify-center items-center bg-gradient-to-r from-[#F89E7B] to-[#C5A9F3] w-[108px] h-[108px] lg:w-[180px] lg:h-[180px] mx-auto absolute left-auto top-auto z-[2]">
+			<div class="rounded-full w-[92%] h-[92%] bg-cover" style="background-image: url(home_me.jpg)"
+				alt="Larissa picture"></div>
 		</div>
-		<div class="w-[216px] h-[216px] lg:w-[248px] lg:h-[248px] rotate absolute left-auto top-auto z-0">
+		<div class="w-[156px] h-[156px] lg:w-[248px] lg:h-[248px] rotate absolute left-auto top-auto z-0">
 			<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 				<path id="circlePath" d="M 10, 50 a 40,40 0 1,1 80,0 40,40 0 1,1 -80,0" />
 				<text>
@@ -33,6 +34,7 @@ text {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-weight: 200;
+
 }
 
 .rotate {

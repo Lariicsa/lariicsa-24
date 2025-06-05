@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from "vue";
+import { ref } from "vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import Tr from "@/i18n/translation";
@@ -27,7 +27,7 @@ const copyEmailToClipboard = () => {
 <template>
 	<div class="w-full flex-col max-w-[1300px] flex  mx-auto h-full min-h-full-std">
 		<main class="flex w-full flex-col md:flex-row items-center justify-between">
-			<div class="flex flex-col w-full md:w-4/6 mt-[32px] sm:mt-[64px] mx-auto items-center sm:items-start">
+			<div class="flex flex-col w-full md:w-9/12 mt-[32px] sm:mt-[64px] mx-auto items-center sm:items-start">
 				<div class="text-[40px] lg:text-[64px] text-center sm:text-left font-extrabold text-[#e0e0e0]">
 					{{ $t("home.hi") }}, {{ $t("home.im") }}
 					<h1 class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-deg-peach to-deg-purple">
@@ -58,7 +58,7 @@ const copyEmailToClipboard = () => {
 				<AppContact @clickOnEnvelope="copyEmailToClipboard" />
 			</div>
 
-			<div class="w-full md:w-2/6 h-full my-[60px] pb-[48px] md:pb-0 md:my-0">
+			<div class="w-full md:w-3/12 h-full my-[60px] pb-[48px] md:pb-0 md:my-0">
 				<CircleImage />
 			</div>
 		</main>
