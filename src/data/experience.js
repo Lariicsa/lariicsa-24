@@ -5,9 +5,11 @@ const jobs = [
 		joblink: "https://www.latouraineinc.com",
 		date: "current",
 		abstract: `
-    Develop Web Apps (CMS, Portal, Social) and Landing pages for Entertainement web content to improve interface and performance.`,
+    Develop and maintain web Applications (and legacy) to improve interface and performance, Improve by 60% Web
+		components, develop Design system, Landing pages, D`,
 		skills: [
 			"Vue",
+			"React",
 			"Pinia",
 			"Tailwind",
 			"Vanilla JS",
@@ -31,8 +33,9 @@ const jobs = [
 		joblink: "https://montebit.com",
 		date: "2019 - 2022",
 		abstract: `
-    Led web apps development, landing pages and components UI library.
-    Developed CMS for Crypto management. Mentored Testers and new devs in team. Created and maintained user manuals and team style guides.
+    Lead Web app development to improve interface and performance
+Design systems and making easier interactions and developer backend for CMS systems.
+Developed CRM for Crypto ATM Manager. Implemented Scrum for Frontend team. Mentored QA testers and Developers.
     `,
 		skills: [
 			"Vue",
@@ -47,7 +50,7 @@ const jobs = [
 			"AdobeXD",
 			"Sketch",
 			"Postgresql",
-			"Documenting",
+			"Mentoring",
 		],
 	},
 
@@ -56,7 +59,10 @@ const jobs = [
 		subtitle: "ASC Education",
 		joblink: "https://asc.education",
 		date: "2017 - 2019",
-		abstract: `Led UX/UI design, conceptualized, designed, and prototyped new features in dashboards and systems interfaces. Created components in Vue. Created and maintained user manuals.`,
+		abstract: `
+		Collaborated closely with developers to translate user needs into product requirements.
+Prioritized the development of new features and ensured that all technical requirements and information architecture were aligned to deliver high-quality features that meet client goals.
+		`,
 		skills: [
 			"UX / UI",
 			"Wireframing",
@@ -72,22 +78,19 @@ const jobs = [
 	},
 
 	{
-		title: "Jr. Frontend Developer",
-		subtitle: "Segundamano.mx",
-		joblink: "https://www.segundamano.mx",
+		title: "UI Developer",
+		subtitle: "Globant",
+		joblink: "https://www.globant.com/es",
 		date: "2015 - 2017",
 		abstract: `
-		I Created and developed rules for CSS stack in whole site and created HTML layout for whole wep app.
-		Implemented Front-End.
+		Developed and maintained user interfaces for City Banamex. Mainly developed CSS rules and styles
 		`,
 		skills: [
 			"UX / UI",
-			"Vue",
+			"React",
 			"SCSS",
 			"Vanilla Js",
 			"SCSS",
-			"Jade HTML",
-			"Docker",
 			"Scrum",
 			"TDD",
 			"Documenting",
