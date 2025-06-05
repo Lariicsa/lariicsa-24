@@ -47,17 +47,19 @@ const props = defineProps({
 <template>
 	<a v-if="isLink" :href="link" target="_blank"
 		class="flex flex-col justify-center items-center border-none rounded-full active:saturate-200 sm:hover:saturate-150 text-center"
+		role="button"
 		:class="`${color} ${size}`">
 		<slot></slot>
 	</a>
 
 	<RouterLink v-else-if="isRoute" :to="to"
 		class="flex flex-col justify-center items-center border-none rounded-full active:saturate-200 sm:hover:saturate-150 text-center"
+		role="button"
 		:class="`${color} ${size}`">
 		<slot></slot>
 	</RouterLink>
 
-	<button v-else
+	<button v-else role="button"
 		class="flex flex-col justify-center items-center border-none rounded-full active:saturate-200 sm:hover:saturate-150"
 		:class="`${color} ${size}`">
 		<slot></slot>

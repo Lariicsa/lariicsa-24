@@ -21,7 +21,6 @@ const copyEmailToClipboard = () => {
 	}, 3000);
 };
 
-
 </script>
 
 <template>
