@@ -16,7 +16,7 @@ defineProps({
 			class="ball flex w-[20px] h-[20px] rounded-full bg-[#F0BAEE] absolute left-auto sm:left-[-172px] top-[-64px] sm:top-[-1px] z-[2]">
 			<span
 				class="tlt flex-grow w-[4px] h-[42px] bg-gradient-to-b from-[#F8B9EE] to-[#FFF0CB] absolute left-[8px] bottom-[20px] z-0"
-				:class="item.date === 'current' ? 'hidden' : 'flex sm:hidden'">
+				:class="item.date === 'current' ? 'hidden' : 'flex sm:hidden'" aria-label="date">
 			</span>
 			<div
 				class="flex w-[80px] text-[#F0BAEE] text-[12px] sm:text-[14px] font-semibold capitalize absolute top-[2px] sm:top-0 left-[32px] z-[3]">
