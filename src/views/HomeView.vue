@@ -12,6 +12,7 @@ const { t, locale } = useI18n();
 const supportedLocales = Tr.supportedLocales;
 const router = useRouter();
 
+
 const showMessage = ref(false);
 const copyEmailToClipboard = () => {
 	navigator.clipboard.writeText("lariicsa@gmail.com");
@@ -27,7 +28,7 @@ const copyEmailToClipboard = () => {
 	<div class="w-full flex-col max-w-[1300px] flex  mx-auto h-full min-h-full-std">
 		<main class="flex w-full flex-col md:flex-row items-center justify-between">
 			<div class="flex flex-col w-full lg:w-8/12 mt-[32px] sm:mt-[64px] mx-auto items-center sm:items-start">
-				<div class="text-[40px] lg:text-[64px] text-center sm:text-left font-extrabold text-[#e0e0e0]">
+				<div class="text-[40px] lg:text-[64px] text-center sm:text-left font-extrabold text-[#e0e0e0] dark:text-white">
 					{{ $t("home.hi") }}, {{ $t("home.im") }}
 					<h1 class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-deg-peach to-deg-purple">
 						Larissa Avila

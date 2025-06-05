@@ -8,6 +8,8 @@ const clickOnEnvelope = () => {
 	emit("clickOnEnvelope");
 };
 
+
+
 const contact = [
 	{
 		icon: "fa-brands fa-linkedin",
