@@ -28,14 +28,14 @@ const copyEmailToClipboard = () => {
 	<div class="w-full flex-col max-w-[1300px] flex  mx-auto h-full min-h-full-std">
 		<main class="flex w-full flex-col md:flex-row items-center justify-between">
 			<div class="flex flex-col w-full md:w-4/6 mt-[32px] sm:mt-[64px] mx-auto items-center sm:items-start">
-				<div class="text-[40px] sm:text-[64px] text-center sm:text-left font-extrabold text-[#e0e0e0]">
+				<div class="text-[40px] lg:text-[64px] text-center sm:text-left font-extrabold text-[#e0e0e0]">
 					{{ $t("home.hi") }}, {{ $t("home.im") }}
 					<h1 class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-deg-peach to-deg-purple">
 						Larissa Avila
 					</h1>
 				</div>
 				<p
-					class="flex items-center text-center sm:text-left sm:items-start w-auto text-[#e0e0e0] font-semibold text-[28px] sm:text-[44px]">
+					class="flex items-center text-center sm:text-left sm:items-start w-auto text-[#e0e0e0] font-semibold text-[24px] lg:text-[44px]">
 					{{ $t("home.developer") }}.
 				</p>
 
@@ -45,12 +45,12 @@ const copyEmailToClipboard = () => {
 
 				<div class="flex w-full justify-center sm:justify-start my-[36px] sm:my-[64px]">
 					<AppButton :isRoute="true" :to="Tr.i18nRoute({ name: 'experience' })" color="peach" size="lg"
-						class="mr-[24px] sm:mr-[48px]">{{
+						class="mr-[18px] lg:mr-[36px]">{{
 							$t("home.btnExperience") }}
 					</AppButton>
 
 					<AppButton :isRoute="true" :to="Tr.i18nRoute({ name: 'about' })" color="pink" size="lg"
-						class="mr-[24px] sm:mr-[48px]">{{
+						class="mr-[20px] lg:mr-[36px]">{{
 							$t("home.btnAbout") }}
 					</AppButton>
 				</div>

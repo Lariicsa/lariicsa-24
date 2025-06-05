@@ -26,11 +26,11 @@
   "home": {
     "hi": "Hola",
     "im": "Soy",
-    "developer": "Desarrolladora Frontend & Documentadora Técnica",
+    "developer": "Desarrolladora Frontend",
     "ninja": "e Ingeniera de Software",
-    "abstract": "Con más de 5 años de experiencia como Frontend, Diseñadora UI/UX y Documentando, cuento con la experiencia necesaria para interactuar con el usuario por medio de las interfaces gráficas.",
+    "abstract": "Con más de 5 años de experiencia como desarrolladora Frontend y 5 años en diseño UX/UI, y más de un año trabajando con IA, aporto un fuerte enfoque centrado en el usuario para crear interfaces intuitivas y efectivas.",
     "btnExperience": "Experiencia",
-    "btnAbout": "¿Quién soy?"
+    "btnAbout": "Sobre mi"
   },
   "experience": {
     "title": "Experiencia",
@@ -148,11 +148,11 @@
     ]
   },
   "about": {
-    "title": "¿Quién soy?",
+    "title": "Sobre mi",
     "fullName": "Larissa Avila",
     "abstract": [
       "Hace mucho tiempo atrás solía ser Diseñadora UX/UI y maquetar en HTML/CSS, pero desde que descubrí la magia de la programación para interfaces ... Me enamoré !",
-      "Creo que unos de los skills que marca la diferencia en mi perfil, en conjunto con mi amplio conocimiento en CSS, es saber lo necesario de las interfaces de usuario, diseño de patrones y el desarrollo de interacción con las mismas."
+      "Creo que unos de los skills que marca la diferencia en mi perfil, es saber lo necesario de las interfaces de usuario, diseño de patrones y el desarrollo de interacción con las mismas."
     ]
   },
   "footer": {

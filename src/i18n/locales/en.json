@@ -26,9 +26,9 @@
   "home": {
     "hi": "Hi",
     "im": "I'm",
-    "developer": "Frontend & Technical Writer",
+    "developer": "Frontend Developer",
     "ninja": "and A.I. Student",
-    "abstract": "With over 5 years of experience as a Frontend, UX/UI designer and as Technical writer, I have the experience to advocate for user through user interfaces",
+    "abstract": "With over 5 years of experience as a Frontend Developer and 5 years in UX/UI design, and more one a year working with A.I., I bring a strong user-centered approach to building intuitive and effective interfaces.",
     "btnExperience": "Experience",
     "btnAbout": "About me"
   },
@@ -155,7 +155,7 @@
       "I think one of the skills that makes me different, in addition to my wide CSS knowledge, i'ts knowing a lot of about user interfaces, design patterns and development interactions."
     ]
   },
-  "footer":{
-    "lastUpdate":"January 2025"
+  "footer": {
+    "lastUpdate": "January 2025"
   }
 }
