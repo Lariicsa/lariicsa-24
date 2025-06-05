@@ -1,5 +1,3 @@
-<!-- @format -->
-
 <script setup>
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
@@ -33,7 +31,7 @@ const changeLanguage = async (event) => {
 };
 </script>
 <template>
-	<div class="relative w-[56px] uppercase flex items-center justify-center">
+	<div class="relative w-[56px] uppercase flex items-center justify-center" aria-label="language menu">
 		<label :for="id" :name="id"
 			class="flex items-center w-auto absolute top-0 left-auto h-auto active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
 			<font-awesome-icon icon="fa-solid fa-globe"
@@ -43,7 +41,7 @@ const changeLanguage = async (event) => {
 		</label>
 		<div
 			class="custom-select relative w-auto h-auto flex justify-center items-center active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
-			<select @change.stop="changeLanguage" :id="id" class="">
+			<select @change.stop="changeLanguage" :id="id" aria-haspopup="true">
 				<option v-for="sLocale in supportedLocales" :key="`locale-${sLocale}`" :value="sLocale"
 					:selected="locale === sLocale">
 					{{ t(`locale.${sLocale}`) }}
