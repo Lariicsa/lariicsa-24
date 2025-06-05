@@ -54,7 +54,7 @@ const toggleMenu = () => {
 		aria-label="Menu">
 		<Applogo class="w-[116px] h-auto" />
 
-		<button @click="toggleMenu" class="w-[28px] h-[28px] border-none">
+		<button @click="toggleMenu" class="w-[28px] h-[28px] border-none" aria-label="menu" >
 			<font-awesome-icon icon="fa-solid fa-bars"
 				class="w-[24px] h-auto text-[#E0E0E0] active:text-[#81B2F6] flex sm:hidden" />
 		</button>
