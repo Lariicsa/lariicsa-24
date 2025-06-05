@@ -44,13 +44,13 @@ const copyEmailToClipboard = () => {
 
 				<div class="flex w-full justify-center sm:justify-start my-[36px] sm:my-[64px]">
 					<AppButton :isRoute="true" :to="Tr.i18nRoute({ name: 'experience' })" color="peach" size="lg"
-						class="mr-[18px] lg:mr-[36px]">{{
-							$t("home.btnExperience") }}
+						class="mr-[18px] lg:mr-[36px]">
+						{{ $t("home.btnExperience") }}
 					</AppButton>
 
 					<AppButton :isRoute="true" :to="Tr.i18nRoute({ name: 'about' })" color="pink" size="lg"
-						class="mr-[20px] lg:mr-[36px]">{{
-							$t("home.btnAbout") }}
+						class="mr-[20px] lg:mr-[36px]">
+						{{ $t("home.btnAbout") }}
 					</AppButton>
 				</div>
 
@@ -62,6 +62,8 @@ const copyEmailToClipboard = () => {
 			</div>
 		</main>
 
-		<AppToaster :show="showMessage" />
+		<AppToaster :show="showMessage">
+			{{ $t("shared.copyEmail") }}
+		</AppToaster>
 	</div>
 </template>
