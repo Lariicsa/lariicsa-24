@@ -1,4 +1,3 @@
-<!-- @format -->
 <script setup>
 import AppTag from "./AppTag.vue";
 
@@ -10,7 +9,7 @@ defineProps({
 });
 </script>
 <template>
-	<div v-for="item in items"
+	<div v-for="item in items" :key="item.id"
 		class="flex shadow-md flex-col items-center bg-[#ffffff] w-full sm:w-[672px] h-auto sm:max-h-[344px] rounded-lg border border-[#CED7E5] px-[24px] sm:px-[24px] py-[24px] mb-[104px] last:mb-0 relative">
 		<div
 			class="ball flex w-[20px] h-[20px] rounded-full bg-[#F0BAEE] absolute left-auto sm:left-[-172px] top-[-64px] sm:top-[-1px] z-[2]">

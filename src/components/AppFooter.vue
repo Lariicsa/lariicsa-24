@@ -1,21 +1,29 @@
 <script setup>
-import { defineEmits } from "vue";
+import { defineEmits, ref } from "vue";
 import { useI18n } from "vue-i18n";
+
+import AppToaster from "@/components/AppToaster.vue";
+import AppEmailLink from "@/components/AppEmailLink.vue"
 import Tr from "@/i18n/translation";
 
-const emit = defineEmits(["clickOnEnvelope"]);
-const clickOnEnvelope = () => {
-	emit("clickOnEnvelope");
-};
-
+const email = 'lariicsa@gmail.com'
+const showMessage = ref(false)
+const copyEmail = () => {
+	showMessage.value = true
+	setTimeout(() => {
+		showMessage.value = false;
+	}, 3000)
+}
 
 
 const contact = [
 	{
+		slug: 'lkn01',
 		icon: "fa-brands fa-linkedin",
 		link: "https://www.linkedin.com/in/lariicsa",
 	},
 	// {
+	//  slug:'gh02',
 	// 	icon: "fa-brands fa-github",
 	// 	link: "https://github.com/Lariicsa",
 	// },
@@ -27,15 +35,15 @@ const contact = [
 		<div class="w-full max-w-[1280px] flex justify-between items-center mx-auto">
 			<span class="text-[12px] sm:text-[16px]"> {{ $t("footer.lastUpdate") }}</span>
 			<div class="w-[124px] sm:w-[116px] flex justify-between items-center">
-				<a v-for="item in contact" :href="item.link"
+				<a v-for="item in contact" :href="item.link" :key="item.slug"
 					class="border border-[#6C6CDC] rounded-full flex justify-center items-center w-[28px] h-[28px] active:saturate-200 sm:hover:saturate-200">
 					<font-awesome-icon :icon="item.icon" class="w-[16px] h-auto" />
 				</a>
-				<button @click="clickOnEnvelope"
-					class="border border-[#6C6CDC] rounded-full flex justify-center items-center w-[28px] h-[28px] active:saturate-200 sm:hover:saturate-200">
-					<font-awesome-icon icon="fa-solid fa-envelope" />
-				</button>
+				<AppEmailLink @clickOnEnvelope="copyEmail(email)" />
 			</div>
 		</div>
+		<AppToaster :show="showMessage">
+			{{ $t("shared.copyEmail") }}
+		</AppToaster>
 	</footer>
 </template>

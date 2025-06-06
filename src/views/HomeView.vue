@@ -54,7 +54,6 @@ const copyEmailToClipboard = () => {
 						{{ $t("home.btnAbout") }}
 					</AppButton>
 				</div>
-
 				<AppContact @clickOnEnvelope="copyEmailToClipboard" />
 			</div>
 
