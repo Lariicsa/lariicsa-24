@@ -1,4 +1,3 @@
-<!-- @format -->
 <script setup>
 import AppTag from "./AppTag.vue";
 
