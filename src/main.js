@@ -19,6 +19,7 @@ import {
 	faLanguage as fasLanguage,
 	faGlobe as fasGlobe,
 	faSquareEnvelope as fasSquareEnvelope,
+	faMoon as fasMoon
 } from "@fortawesome/free-solid-svg-icons";
 
 /* @fortawesome Brands */
@@ -34,6 +35,7 @@ library.add(
 	fasEnvelope,
 	fasCircleXmark,
 	fasLanguage,
+	fasMoon,
 	fasGlobe,
 	fasSquareEnvelope
 );
