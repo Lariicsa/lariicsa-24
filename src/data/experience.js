@@ -1,5 +1,6 @@
 const jobs = [
 	{
+		id: 2022,
 		title: "Frontend Developer",
 		subtitle: "Baja Technologies",
 		joblink: "https://www.latouraineinc.com",
@@ -28,6 +29,7 @@ const jobs = [
 	},
 
 	{
+		id: 2020,
 		title: "Lead Frontend Developer",
 		subtitle: "Montebit",
 		joblink: "https://montebit.com",
@@ -55,6 +57,7 @@ Developed CRM for Crypto ATM Manager. Implemented Scrum for Frontend team. Mento
 	},
 
 	{
+		id: 2017,
 		title: "Product Designer",
 		subtitle: "ASC Education",
 		joblink: "https://asc.education",
@@ -78,6 +81,7 @@ Prioritized the development of new features and ensured that all technical requi
 	},
 
 	{
+		id: 2015,
 		title: "UI Developer",
 		subtitle: "Globant",
 		joblink: "https://www.globant.com/es",
@@ -98,6 +102,7 @@ Prioritized the development of new features and ensured that all technical requi
 	},
 
 	{
+		id: 2013,
 		title: "Lead Web Designer",
 		subtitle: "Holding Leos",
 		joblink: "http://holdingleos.com",
