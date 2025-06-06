@@ -11,16 +11,15 @@ import CircleImage from "@/components/CircleImage.vue";
 const { t, locale } = useI18n();
 const supportedLocales = Tr.supportedLocales;
 const router = useRouter();
+const email = 'lariicsa@gmail.com'
+const showMessage = ref(false)
 
-
-const showMessage = ref(false);
-const copyEmailToClipboard = () => {
-	navigator.clipboard.writeText("lariicsa@gmail.com");
-	showMessage.value = true;
+const copyEmail = () => {
+	showMessage.value = true
 	setTimeout(() => {
 		showMessage.value = false;
-	}, 3000);
-};
+	}, 3000)
+}
 
 </script>
 
@@ -54,10 +53,10 @@ const copyEmailToClipboard = () => {
 						{{ $t("home.btnAbout") }}
 					</AppButton>
 				</div>
-				<AppContact @clickOnEnvelope="copyEmailToClipboard" />
+				<AppContact @clickOnEnvelope="copyEmail(email)" />
 			</div>
 
-			<div class="w-full md:w-4/12 h-full my-[60px] pb-[48px] md:pb-0 md:my-0">
+			<div class="w-full md:w-4/12 h-full my-[60px] pb-[8px] md:pb-0 md:my-0">
 				<CircleImage />
 			</div>
 		</main>

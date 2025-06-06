@@ -1,7 +1,6 @@
 <script setup>
-import { defineEmits, ref } from "vue";
+import { ref } from "vue";
 import { useI18n } from "vue-i18n";
-
 import AppToaster from "@/components/AppToaster.vue";
 import AppEmailLink from "@/components/AppEmailLink.vue"
 import Tr from "@/i18n/translation";
@@ -21,12 +20,7 @@ const contact = [
 		slug: 'lkn01',
 		icon: "fa-brands fa-linkedin",
 		link: "https://www.linkedin.com/in/lariicsa",
-	},
-	// {
-	//  slug:'gh02',
-	// 	icon: "fa-brands fa-github",
-	// 	link: "https://github.com/Lariicsa",
-	// },
+	}
 ];
 </script>
 <template>
@@ -39,7 +33,7 @@ const contact = [
 					class="border border-[#6C6CDC] rounded-full flex justify-center items-center w-[28px] h-[28px] active:saturate-200 sm:hover:saturate-200">
 					<font-awesome-icon :icon="item.icon" class="w-[16px] h-auto" />
 				</a>
-				<AppEmailLink @clickOnEnvelope="copyEmail(email)" />
+				<AppEmailLink @clickOnEnvelope="copyEmail(email)"/>
 			</div>
 		</div>
 		<AppToaster :show="showMessage">
