@@ -6,7 +6,7 @@ const jobs = [
 		date: "current",
 		abstract: `
     Develop and maintain web Applications (and legacy) to improve interface and performance, Improve by 60% Web
-		components, develop Design system, Landing pages, D`,
+		components, develop Design systems, A/B test Landing Pages.`,
 		skills: [
 			"Vue",
 			"React",
