@@ -18,10 +18,14 @@ import {
 	faCircleXmark as fasCircleXmark,
 	faLanguage as fasLanguage,
 	faGlobe as fasGlobe,
+	faSquareEnvelope as fasSquareEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* @fortawesome Brands */
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+	faGithub,
+	faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 library.add(
 	faGithub,
@@ -30,7 +34,8 @@ library.add(
 	fasEnvelope,
 	fasCircleXmark,
 	fasLanguage,
-	fasGlobe
+	fasGlobe,
+	fasSquareEnvelope
 );
 
 const app = createApp(App);
