@@ -17,9 +17,10 @@ import {
 	faBars as fasBars,
 	faCircleXmark as fasCircleXmark,
 	faLanguage as fasLanguage,
+	faMoon as fasMoon,
 	faGlobe as fasGlobe,
 	faSquareEnvelope as fasSquareEnvelope,
-	faMoon as fasMoon
+	faSun as fasSun,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* @fortawesome Brands */
@@ -37,7 +38,8 @@ library.add(
 	fasLanguage,
 	fasMoon,
 	fasGlobe,
-	fasSquareEnvelope
+	fasSquareEnvelope,
+	fasSun
 );
 
 const app = createApp(App);

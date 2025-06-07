@@ -56,36 +56,39 @@ const toggleMenu = () => {
 
 		<button @click="toggleMenu" class="w-[28px] h-[28px] border-none" aria-label="menu">
 			<font-awesome-icon icon="fa-solid fa-bars"
-				class="w-[24px] h-auto text-[#E0E0E0] active:text-[#81B2F6] flex md:hidden" />
+				class="w-[24px] h-auto text-[#E0E0E0] dark:text-white active:text-[#81B2F6] flex md:hidden" />
 		</button>
 
 		<div class="w-auto hidden md:flex h-full">
 			<ul class="w-auto px-[24px] flex items-center  p-0 text-[16px] sm:text-[18px] font-medium">
 				<li class="mr-[24px] my-0">
 					<RouterLink :to="Tr.i18nRoute({ name: 'home' })" class="active:text-[#81B2F6] sm:hover:text-[#81B2F6]"
-						:class="'home' === currenRoute ? 'text-[#81B2F6]' : 'text-[#e0e0e0]'"> {{ $t("nav.menu.0.name")
+						:class="'home' === currenRoute ? 'text-[#81B2F6] dark:underline' : 'text-[#e0e0e0] dark:text-white'"> {{
+							$t("nav.menu.0.name")
 						}}</RouterLink>
 				</li>
 				<li class="mr-[24px] my-0">
 					<RouterLink :to="Tr.i18nRoute({ name: 'experience' })" class="active:text-[#81B2F6] sm:hover:text-[#81B2F6]"
-						:class="'experience' === currenRoute ? 'text-[#81B2F6]' : 'text-[#e0e0e0]'"> {{ $t("nav.menu.1.name")
+						:class="'experience' === currenRoute ? 'text-[#81B2F6] dark:underline' : 'text-[#e0e0e0] dark:text-white'">
+						{{ $t("nav.menu.1.name")
 						}}</RouterLink>
 				</li>
 				<li class="mr-[24px] my-0" role="link">
 					<RouterLink :to="Tr.i18nRoute({ name: 'about' })" class="active:text-[#81B2F6] sm:hover:text-[#81B2F6]"
-						:class="'about' === currenRoute ? 'text-[#81B2F6]' : 'text-[#e0e0e0]'"> {{ $t("nav.menu.2.name")
+						:class="'about' === currenRoute ? 'text-[#81B2F6] dark:underline' : 'text-[#e0e0e0] dark:text-white'"> {{
+							$t("nav.menu.2.name")
 						}}</RouterLink>
 				</li>
 			</ul>
-			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[16px]"></span>
+			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[16px] dark:bg-white"></span>
 			<AppButton :isLink="true" link="resume_Larissa_Avila.pdf" color="blue" size="sm">{{ $t("nav.resume") }}
 			</AppButton>
-			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[16px]"></span>
+			<span class="bg-[#51576E] dark:bg-white h-[24px] w-[2px] mx-[16px]"></span>
 			<AppLanguage id="topLang" />
-			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[16px]"></span>
-				<div class="w-[12px] m-auto h-auto text-[#e0e0e0]">
-					<AppDarkMode />
-				</div>
+			<span class="bg-[#51576E] dark:bg-white h-[24px] w-[2px] mx-[16px]"></span>
+			<div class="w-[16px] m-auto h-auto text-[#e0e0e0]">
+				<AppDarkMode />
+			</div>
 		</div>
 		<AppMobileNav :menuItems="iMenu" :isOpen="isOpen" @toggleButton="toggleMenu" />
 	</nav>

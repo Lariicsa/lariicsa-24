@@ -7,14 +7,14 @@ const supportedLocales = Tr.supportedLocales;
 </script>
 <template>
 	<div class="flex flex-col items-center w-full mb-[120px] md:mb-0 h-full min-h-[calc(100vh-116px)]">
-		<h1 class="mt-[56px] text-[44px] text-[#E5E5E5] text-center font-semibold">
+		<h1 class="mt-[56px] text-[44px] text-[#E5E5E5] dark:text-white text-center font-semibold">
 			{{ $t("about.title") }}
 		</h1>
 
 		<div
-			class="cont1 flex items-center md:items-stretch bg-[#FFE194] flex-col sm:flex-row w-full max-w-[1124px] h-auto mt-[64px] md:mt-[108px] rounded-br-[80px]  md:rounded-bl-[122px] rounded-tl-[80px] md:rounded-tr-[122px] relative">
+			class="cont1 flex items-center md:items-stretch bg-[#FFE194] dark:bg-black flex-col sm:flex-row w-full max-w-[1124px] h-auto mt-[64px] md:mt-[108px] rounded-br-[80px]  md:rounded-bl-[122px] rounded-tl-[80px] md:rounded-tr-[122px] relative">
 			<p
-				class="big-txt text-[70px] sm:text-[120px] absolute top-[-72px] sm:top-[-120px] left-auto text-center w-full z-0 opacity-5 font-bold text-[#FFE194]">
+				class="big-txt text-[70px] sm:text-[120px] absolute top-[-72px] sm:top-[-120px] left-auto text-center w-full z-0 opacity-5 font-bold text-[#FFE194] dark:text-gray-100">
 				{{ $t("about.title") }}
 			</p>
 
@@ -26,7 +26,7 @@ const supportedLocales = Tr.supportedLocales;
 			</div>
 
 			<div
-				class="flex flex-col  w-xl sm:w-2/3 bg-transparent md:bg-[#FFE194] text-[#373737] rounded-tl-[80px] md:rounded-tr-[122px] px-[24px] md:px-[48px] py-[48px] relative z-[2]">
+				class="flex flex-col  w-xl sm:w-2/3 bg-transparent md:bg-[#FFE194] dark:bg-black text-[#373737] dark:text-gray-300 rounded-tl-[80px] md:rounded-tr-[122px] px-[24px] md:px-[48px] py-[48px] relative z-[2]">
 				<h2 class="text-center md:text-left font-semibold md:text-[32px] text-[24px]">
 					{{ $t("about.fullName") }}
 				</h2>

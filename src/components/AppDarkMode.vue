@@ -1,27 +1,25 @@
 <template>
-  <div aria-label="dark mode" @click="setDarkMode()" class="md:hover:cursor-pointer text-white">
-    <font-awesome-icon icon="fas fa-moon" class="w-full h-auto" />
+  <div role="switch" :aria-checked="isDarkMode" @click="setDarkMode()" class="md:hover:cursor-pointer"
+    :class="`${isDarkMode ? 'text-white' : 'text-gray-400'}`">
+    <font-awesome-icon :icon="`${isDarkMode ? 'fas fa-sun' : 'fas fa-moon'}`" class="w-full h-auto" />
   </div>
 </template>
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const isDarkMode = ref(false)
-const space = ref(document.querySelector('#app'))
+const isDarkMode = ref(JSON.parse(localStorage.getItem('darkmode') ?? 'false'))
 
-onMounted(()=>{
-  space.value
-})
-
-const setDarkMode = () => {
-  isDarkMode.value = !isDarkMode.value
-  const darkMode = localStorage.getItem('dm')
-  if (darkMode === null || darkMode === 'nain') {
-    localStorage.setItem('dm', 'yei')
-    space.value.classList.add('dark')
-  } else {
-    localStorage.setItem('dm', 'nain')
-    space.value.classList.remove('dark')
-  }
+const applyClass = () => {
+  const elem = document.firstElementChild
+  elem.className = isDarkMode.value ? 'dark' : 'nodark'
 }
+
+
+function setDarkMode() {
+  isDarkMode.value = !isDarkMode.value
+  localStorage.setItem('darkmode', JSON.stringify(isDarkMode.value))
+  applyClass()
+}
+
+onMounted(applyClass)
 </script>

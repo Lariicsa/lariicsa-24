@@ -38,7 +38,7 @@ const copyEmail = () => {
 					{{ $t("home.developer") }}.
 				</p>
 
-				<p class="w-full text-[#9FA1A4] mt-[24px] text-[17px] sm:text-[20px] font-light text-center sm:text-left">
+				<p class="w-full text-[#9FA1A4] dark:text-white mt-[24px] text-[17px] sm:text-[20px] font-light text-center sm:text-left">
 					{{ $t("home.abstract") }}
 				</p>
 

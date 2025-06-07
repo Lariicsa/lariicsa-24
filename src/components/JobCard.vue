@@ -1,5 +1,5 @@
 <script setup>
-import AppTag from "./AppTag.vue";
+import AppTag from "@/components/AppTag.vue";
 
 defineProps({
 	items: {
@@ -10,7 +10,7 @@ defineProps({
 </script>
 <template>
 	<div v-for="item in items" :key="item.id"
-		class="flex shadow-md flex-col items-center bg-[#ffffff] w-full sm:w-[672px] h-auto sm:max-h-[344px] rounded-lg border border-[#CED7E5] px-[24px] sm:px-[24px] py-[24px] mb-[104px] last:mb-0 relative">
+		class="flex shadow-md flex-col items-center bg-white dark:bg-black w-full sm:w-[672px] h-auto sm:max-h-[344px] rounded-lg border border-[#CED7E5] px-[24px] sm:px-[24px] py-[24px] mb-[104px] last:mb-0 relative">
 		<div
 			class="ball flex w-[20px] h-[20px] rounded-full bg-[#F0BAEE] absolute left-auto sm:left-[-172px] top-[-64px] sm:top-[-1px] z-[2]">
 			<span
@@ -26,19 +26,20 @@ defineProps({
 			</span>
 		</div>
 
-		<h3 class="text-[#373737] font-bold text-[22px] sm:text-[26px] my-0">
+		<h3 class="text-[#373737] dark:text-white font-bold text-[22px] sm:text-[26px] my-0">
 			{{ item.title }}
 		</h3>
 		<a :href="item.joblink" target="_blank"
-			class="text-[#3684d2] text-[20px] underline sm:text-[18px] font-semibold text-center active:text-[#0a479d] my-[4px] sm:hover:text-[#0a479d]">
+			class="text-[#3684d2] dark:text-white text-[20px] underline sm:text-[18px] font-semibold text-center active:text-[#0a479d] my-[4px] sm:hover:text-[#0a479d]"
+			role="link">
 			{{ item.subtitle }}
 		</a>
-		<p class="text-[14px] sm:text-[16px] text-[#51576E] text-center w-auto my-[8px] sm:my-[8px]">
+		<p class="text-[14px] sm:text-[16px] text-[#51576E] dark:text-white text-center w-auto my-[8px] sm:my-[8px]">
 			{{ item.abstract }}
 		</p>
 		<hr class="border-0 h-[1px] bg-[#EAEAEA] w-full my-[8px]" />
 		<div class="flex justify-around items-center flex-wrap">
-			<AppTag v-for="skill in item.skills">{{ skill }}</AppTag>
+			<AppTag v-for="skill in item.skills" :key="item.id">{{ skill }}</AppTag>
 		</div>
 	</div>
 </template>
