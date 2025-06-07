@@ -1,7 +1,4 @@
-<!-- @format -->
-
 <script setup>
-
 const props = defineProps({
 	show: {
 		type: Boolean,
@@ -13,7 +10,7 @@ const props = defineProps({
 	<Transition :duration="450" name="nested">
 		<div v-if="props.show" aria-live="polite"
 			class="flex w-full lg:w-[156px] h-[48px] justify-center items-center bg-[#C3D994] text-[16px] font-medium text-[#373737] rounded-sm shadow-md fixed bottom-0 lg:bottom-[64px] left-0 lg:left-auto z-[5]">
-			Copied e-Mail
+			<slot></slot>
 		</div>
 	</Transition>
 </template>
