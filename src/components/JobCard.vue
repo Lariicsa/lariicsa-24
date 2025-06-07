@@ -30,7 +30,7 @@ defineProps({
 			{{ item.title }}
 		</h3>
 		<a :href="item.joblink" target="_blank"
-			class="text-[#3684d2] text-[20px] sm:text-[22px] font-semibold text-center my-[4px] sm:hover:text-[#0a479d]">
+			class="text-[#3684d2] text-[20px] underline sm:text-[18px] font-semibold text-center active:text-[#0a479d] my-[4px] sm:hover:text-[#0a479d]">
 			{{ item.subtitle }}
 		</a>
 		<p class="text-[14px] sm:text-[16px] text-[#51576E] text-center w-auto my-[8px] sm:my-[8px]">

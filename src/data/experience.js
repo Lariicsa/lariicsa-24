@@ -3,7 +3,7 @@ const jobs = [
 		id: 2022,
 		title: "Frontend Developer",
 		subtitle: "Baja Technologies",
-		joblink: "https://www.latouraineinc.com",
+		joblink: "https://bajatechnologies.com",
 		date: "current",
 		abstract: `
     Develop and maintain web Applications (and legacy) to improve interface and performance, Improve by 60% Web
