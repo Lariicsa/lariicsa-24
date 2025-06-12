@@ -30,7 +30,7 @@ defineProps({
 </script>
 <template>
 	<div class="mobileMenu w-full h-full fixed z-50 top-0 right-0 bg-[#000000]/70 transition duration-200 ease-in-out"
-		:class="isOpen ? 'translate-x-0' : 'translate-x-full'">
+		:class="isOpen ? 'translate-x-0' : 'translate-x-full'" @click="toggleButton" aria-label="close menu">
 		<div class="bg-[#353d47] text-[#e0e0e0] dark:text-white absolute h-full px-[24px] pt-[72px] w-[80%] right-0">
 			<div class="absolute w-[32px] h-[32px] right-[32px] top-[32px] active:text-[#81B2F6]" aria-label="close menu">
 				<font-awesome-icon @click.stop="toggleButton" icon="fa-solid fa-circle-xmark"
@@ -51,7 +51,7 @@ defineProps({
 							}}</RouterLink>
 					</li>
 					<li
-						class="w-full text-[18px] py-0 text-[#f0f0f0] my-[24px] border border-x-0 border-t-0 border-b-[#51576E] border-dotted">
+						class="w-full text-[18px] py-0 text-[#f0f0f0] my-[24px] border border-x-0 border-t-0 border-b-[#51576E] border-dotted" role="link">
 						<RouterLink :to="Tr.i18nRoute({ name: 'about' })" class="block h-full w-full py-[16px]"
 							:class="'about' === currenRoute ? 'text-[#81B2F6]' : 'text-[#e0e0e0] dark:text-white'"> {{ $t("nav.menu.2.name")
 							}}</RouterLink>
