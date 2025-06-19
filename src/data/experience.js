@@ -1,6 +1,6 @@
 const jobs = [
 	{
-		title: "Frontend Developer",
+		title: "Frontend Software Engineer",
 		subtitle: "Baja Technologies",
 		joblink: "https://www.latouraineinc.com",
 		date: "current",
