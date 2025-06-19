@@ -1,6 +1,6 @@
 <script setup>
 
-const cvLink = '../../public/resume_Larissa_Avila.pdf'
+const cvLink = '/resume_Larissa_Avila.pdf'
 </script>
 <template>
   <div class="mt-8 flex w-full">

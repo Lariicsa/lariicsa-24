@@ -1,4 +1,8 @@
-import { createRouter, createWebHistory, RouterView } from "vue-router";
+import {
+	createRouter,
+	createWebHistory,
+	RouterView,
+} from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import Tr from "@/i18n/translation";
 
