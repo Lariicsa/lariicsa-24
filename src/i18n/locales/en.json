@@ -3,6 +3,9 @@
     "en": "English",
     "es": "Spanish"
   },
+  "shared": {
+    "copyEmail": "e-mail copied!"
+  },
   "nav": {
     "resume": "Resume",
     "menu": [
@@ -22,10 +25,10 @@
         "slug": "about"
       }
     ],
-    "accessibility":{
-      "burger":"Navigation menu",
-      "close":"Close menu",
-      "open":"Open menu"
+    "accessibility": {
+      "burger": "Navigation menu",
+      "close": "Close menu",
+      "open": "Open menu"
     }
   },
   "home": {

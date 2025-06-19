@@ -3,6 +3,9 @@
     "en": "Inglés",
     "es": "Español"
   },
+  "shared": {
+    "copyEmail": "¡e-mail copiado!"
+  },
   "nav": {
     "resume": "Currículum",
     "menu": [
