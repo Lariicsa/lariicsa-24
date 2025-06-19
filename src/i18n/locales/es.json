@@ -26,9 +26,9 @@
   "home": {
     "hi": "Hola",
     "im": "Soy",
-    "developer": "Desarrolladora Frontend",
+    "developer": "Frontend Software Engineer",
     "ninja": "e Ingeniera de Software",
-    "abstract": "Con más de 5 años de experiencia como desarrolladora Frontend y 5 años en diseño UX/UI, y más de un año trabajando con IA, aporto un fuerte enfoque centrado en el usuario para crear interfaces intuitivas y efectivas.",
+    "abstract": "Con más de 5 años de experiencia como Frontend y diseñador UX/UI, creo interfaces centradas en el usuario que combinan funcionalidad y una experiencia intuitiva.",
     "btnExperience": "Experiencia",
     "btnAbout": "Sobre mi"
   },
@@ -36,7 +36,7 @@
     "title": "Experiencia",
     "cards": [
       {
-        "title": "Frontend Developer",
+        "title": "Frontend Software Engineer",
         "subtitle": "Baja Technologies",
         "date": "current",
         "abstract": "Desarrollo de Web Apps (CMS, Portales, Social) y Landing pages para contendido de entretenimiento. Ajustes en interfaz de usuario y desarrollo e implementación de nuevas tecnologías de FE.",

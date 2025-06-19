@@ -1,7 +1,6 @@
 const jobs = [
 	{
-		id: 2022,
-		title: "Frontend Developer",
+		title: "Frontend Software Engineer",
 		subtitle: "Baja Technologies",
 		joblink: "https://bajatechnologies.com",
 		date: "current",
