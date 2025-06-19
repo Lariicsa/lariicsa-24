@@ -1,4 +1,3 @@
-<!-- @format -->
 <script setup>
 import { ref, computed } from "vue";
 import { RouterLink } from "vue-router"
@@ -77,8 +76,9 @@ const toggleMenu = () => {
 				</li>
 			</ul>
 			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[24px]"></span>
-			<AppButton :isLink="true" link="resume_Larissa_Avila.pdf" color="blue" size="sm">{{ $t("nav.resume") }}
-			</AppButton>
+			<RouterLink :to="Tr.i18nRoute({ name: 'pdfviewer' })" class="active:text-[#81B2F6] sm:hover:text-[#81B2F6]"
+				:class="'about' === currenRoute ? 'text-[#81B2F6]' : 'text-[#e0e0e0]'"> {{ $t("nav.resume")
+				}}</RouterLink>
 			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[24px]"></span>
 			<AppLanguage id="topLang" />
 		</div>

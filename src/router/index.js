@@ -1,7 +1,5 @@
-/** @format */
-
 import { createRouter, createWebHistory, RouterView } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import HomeView from "@/views/HomeView.vue";
 import Tr from "@/i18n/translation";
 
 const router = createRouter({
@@ -23,13 +21,19 @@ const router = createRouter({
 					path: "about",
 					name: "about",
 
-					component: () => import("../views/AboutView.vue"),
+					component: () => import("@/views/AboutView.vue"),
 				},
 				{
 					path: "experience",
 					name: "experience",
 
-					component: () => import("../views/ExperienceView.vue"),
+					component: () => import("@/views/ExperienceView.vue"),
+				},
+				{
+					path: "pdfviewer",
+					name: "pdfviewer",
+
+					component: () => import("@/views/AppPDFViewer.vue"),
 				},
 			],
 		},
