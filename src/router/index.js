@@ -34,7 +34,7 @@ const router = createRouter({
 					component: () => import("@/views/ExperienceView.vue"),
 				},
 				{
-					path: "pdfviewer",
+					path: "resume",
 					name: "pdfviewer",
 
 					component: () => import("@/views/AppPDFViewer.vue"),
