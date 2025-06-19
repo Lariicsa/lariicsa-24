@@ -22,13 +22,14 @@ const clickOnEnvelope = () => {
 	<div class="flex w-auto h-auto">
 		<div class="w-[320px] flex justify-between items-center">
 			<a v-for="item in contact" :key="item.slug" :href="item.link" target="_blank"
-				class="w-[26px] h-[24px] sm:w-[40px] sm:h-[40px] text-[#E0E0E0] active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
+				class="w-[26px] h-auto sm:w-[40px] sm:h-[40px] text-[#E0E0E0] active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
 				<font-awesome-icon :icon="item.icon" class="w-full h-auto" />
 			</a>
-			<button @click="clickOnEnvelope()"
-				class="h-auto w-auto underline text-[18px] text-[#E0E0E0] active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
-				lariicsa@gmail.com
-			</button>
+			<div role="button" @click="clickOnEnvelope()"
+				class="w-[24px] h-auto sm:w-[40px] sm:h-[40px] text-[#E0E0E0] active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
+				<font-awesome-icon icon="fa-solid fa-envelope" class="w-full h-auto" />
+			</div>
+
 		</div>
 	</div>
 </template>

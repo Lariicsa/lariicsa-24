@@ -50,7 +50,7 @@ const copyEmailToClipboard = () => {
 					</AppButton>
 
 					<AppButton :isRoute="true" :to="Tr.i18nRoute({ name: 'about' })" color="pink" size="lg"
-						class="mr-[24px] sm:mr-[48px]">{{
+						class="mr-0 sm:mr-[48px]">{{
 							$t("home.btnAbout") }}
 					</AppButton>
 

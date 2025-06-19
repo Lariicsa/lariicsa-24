@@ -2,14 +2,18 @@
 import { computed, ref, toRaw } from "vue";
 import AppTimeline from "@/components/AppTimeline.vue";
 import JobCard from "@/components/JobCard.vue";
-import experience from '@/data/experience'
+// import experience from '@/data/experience'
 import { useI18n } from "vue-i18n";
 import Tr from "@/i18n/translation";
 
 
 const { t, tm, rt, locale } = useI18n();
 const supportedLocales = Tr.supportedLocales;
-const experiences = experience
+
+const experiences = computed (()=>{
+	return t("experience.cards")
+})
+
 
 
 </script>
@@ -23,7 +27,10 @@ const experiences = experience
 		<div class="flex justify-between h-auto w-full max-w-[1230px] mt-[84px] sm:mt-[64px] mb-[100px]">
 			<AppTimeline />
 			<div class="flex flex-col w-full">
-				<JobCard :items="experiences" />
+				<template v-for="item in experiences">
+					<JobCard  :item="item" />
+				</template>
+				
 			</div>
 		</div>
 	</div>
