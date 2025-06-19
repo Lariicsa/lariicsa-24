@@ -50,13 +50,12 @@ const toggleMenu = () => {
 </script>
 <template>
 	<nav
-		class="w-full group flex justify-between items-center max-w-[1280px] h-[28px] rounded-full mt-[32px] mx-auto px-[24px] sm:px-0"
-		aria-label="Menu">
+		class="w-full group flex justify-between items-center max-w-[1280px] h-[28px] rounded-full mt-[32px] mx-auto px-[24px] sm:px-0">
 		<Applogo class="w-[116px] h-auto" />
 
-		<button @click="toggleMenu" class="w-[28px] h-[28px] border-none" aria-label="open menu">
+		<button @click="toggleMenu" class="w-[28px] h-[28px] border-none" :aria-label="$t('nav.accessibility.burger')">
 			<font-awesome-icon icon="fa-solid fa-bars"
-				class="w-[24px] h-auto text-[#E0E0E0] dark:text-white active:text-[#81B2F6] flex md:hidden" />
+				class="w-[24px] h-auto text-[#E0E0E0] dark:text-white active:text-[#81B2F6] flex md:hidden" :aria-label="$t('nav.accessibility.open')" />
 		</button>
 
 		<div class="w-auto hidden md:flex h-full">

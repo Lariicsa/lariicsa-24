@@ -21,7 +21,12 @@
         "link": "/about",
         "slug": "about"
       }
-    ]
+    ],
+    "accessibility": {
+      "burger": "Menu de navegación",
+      "close": "Cerrar menu",
+      "open": "Abrir menu"
+    }
   },
   "home": {
     "hi": "Hola",
