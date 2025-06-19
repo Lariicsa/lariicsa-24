@@ -80,10 +80,11 @@ const toggleMenu = () => {
 						}}</RouterLink>
 				</li>
 			</ul>
-			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[16px] dark:bg-white"></span>
-			<AppButton :isLink="true" link="resume_Larissa_Avila.pdf" color="blue" size="sm">{{ $t("nav.resume") }}
-			</AppButton>
-			<span class="bg-[#51576E] dark:bg-white h-[24px] w-[2px] mx-[16px]"></span>
+			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[24px]"></span>
+			<RouterLink :to="Tr.i18nRoute({ name: 'pdfviewer' })" class="active:text-[#81B2F6] sm:hover:text-[#81B2F6]"
+				:class="'about' === currenRoute ? 'text-[#81B2F6]' : 'text-[#e0e0e0]'"> {{ $t("nav.resume")
+				}}</RouterLink>
+			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[24px]"></span>
 			<AppLanguage id="topLang" />
 			<span class="bg-[#51576E] dark:bg-white h-[24px] w-[2px] mx-[16px]"></span>
 			<div class="w-[16px] m-auto h-auto text-[#e0e0e0]">
