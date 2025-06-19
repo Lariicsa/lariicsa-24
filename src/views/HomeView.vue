@@ -42,6 +42,10 @@ const copyEmail = () => {
 					{{ $t("home.abstract") }}
 				</p>
 
+				<div class="flex w-full mt-[32px]">
+					<AppContact @clickOnEnvelope="copyEmail(email)" />
+				</div>
+
 				<div class="flex w-full justify-center sm:justify-start my-[36px] sm:my-[64px]">
 					<AppButton :isRoute="true" :to="Tr.i18nRoute({ name: 'experience' })" color="peach" size="lg"
 						class="mr-[18px] lg:mr-[36px]">
@@ -53,7 +57,7 @@ const copyEmail = () => {
 							$t("home.btnAbout") }}
 					</AppButton>
 				</div>
-				<AppContact @clickOnEnvelope="copyEmail(email)" />
+				
 			</div>
 
 			<div class="w-full md:w-4/12 h-full my-[60px] pb-[8px] md:pb-0 md:my-0">
