@@ -1,16 +1,36 @@
 <script setup>
+<<<<<<< HEAD
 import AppTag from "@/components/AppTag.vue";
+=======
+import { useI18n } from "vue-i18n";
+import Tr from "@/i18n/translation";
+
+
+const { t, tm, rt, locale } = useI18n();
+import AppTag from "./AppTag.vue";
+>>>>>>> develop
 
 defineProps({
 	items: {
 		type: Object,
 		default: () => { },
 	},
+
+	item:{
+		type: Object,
+		default: () => { },
+	}
 });
 </script>
 <template>
+<<<<<<< HEAD
 	<div v-for="item in items" :key="item.id"
 		class="flex shadow-md flex-col items-center bg-white dark:bg-black w-full sm:w-[672px] h-auto sm:max-h-[344px] rounded-lg border border-[#CED7E5] px-[24px] sm:px-[24px] py-[24px] mb-[104px] last:mb-0 relative">
+=======
+
+	<div
+		class="flex shadow-md flex-col items-center bg-[#ffffff] w-full sm:w-[672px] h-auto sm:h-[344px] rounded-lg border border-[#CED7E5] px-[24px] sm:px-[48px] py-[24px] mb-[104px] last:mb-0 relative">
+>>>>>>> develop
 		<div
 			class="ball flex w-[20px] h-[20px] rounded-full bg-[#F0BAEE] absolute left-auto sm:left-[-172px] top-[-64px] sm:top-[-1px] z-[2]">
 			<span
@@ -26,8 +46,13 @@ defineProps({
 			</span>
 		</div>
 
+<<<<<<< HEAD
 		<h3 class="text-[#373737] dark:text-white font-bold text-[22px] sm:text-[26px] my-0">
 			{{ item.title }}
+=======
+		<h3 class="text-[#373737] font-bold text-[22px] sm:text-[30px] my-0">
+			{{ $rt(item.title) }}
+>>>>>>> develop
 		</h3>
 		<a :href="item.joblink" target="_blank"
 			class="text-[#3684d2] dark:text-white text-[20px] underline sm:text-[18px] font-semibold text-center active:text-[#0a479d] my-[4px] sm:hover:text-[#0a479d]"
@@ -42,4 +67,5 @@ defineProps({
 			<AppTag v-for="skill in item.skills" :key="item.id">{{ skill }}</AppTag>
 		</div>
 	</div>
+
 </template>

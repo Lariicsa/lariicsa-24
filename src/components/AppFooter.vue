@@ -20,7 +20,11 @@ const contact = [
 		slug: 'lkn01',
 		icon: "fa-brands fa-linkedin",
 		link: "https://www.linkedin.com/in/lariicsa",
-	}
+	},
+	{
+		icon: "fa-brands fa-github",
+		link: "https://github.com/Lariicsa",
+	},
 ];
 </script>
 <template>

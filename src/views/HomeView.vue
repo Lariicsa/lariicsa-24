@@ -49,8 +49,8 @@ const copyEmail = () => {
 					</AppButton>
 
 					<AppButton :isRoute="true" :to="Tr.i18nRoute({ name: 'about' })" color="pink" size="lg"
-						class="mr-[20px] lg:mr-[36px]">
-						{{ $t("home.btnAbout") }}
+						class="mr-0 sm:mr-[48px]">{{
+							$t("home.btnAbout") }}
 					</AppButton>
 				</div>
 				<AppContact @clickOnEnvelope="copyEmail(email)" />
