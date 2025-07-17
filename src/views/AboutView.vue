@@ -33,8 +33,12 @@ const picAbout = '../about_me.jpg'
 				</h2>
 				<p class="text-center md:text-left text-[14px] md:text-[20px] mt-[24px] md:mt-[32px]">
 					{{ $t("about.abstract.0") }}
-					<br /> <br />
+				</p>
+				<p class="text-center md:text-left text-[14px] md:text-[20px] mt-[24px] md:mt-[32px]">
 					{{ $t("about.abstract.1") }}
+				</p>
+				<p class="text-center md:text-left text-[14px] md:text-[20px] mt-[24px] md:mt-[32px]">
+					{{ $t("about.abstract.2") }}
 				</p>
 			</div>
 		</div>

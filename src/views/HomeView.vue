@@ -42,7 +42,7 @@ const copyEmail = () => {
 					{{ $t("home.abstract") }}
 				</p>
 
-				<div class="flex w-full mt-[32px]">
+				<div class="flex w-auto mt-[32px]">
 					<AppContact @clickOnEnvelope="copyEmail(email)" />
 				</div>
 
